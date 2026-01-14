@@ -4297,6 +4297,20 @@
     "text": "Matrix Derivatives: Quadratic Forms\n\nExpanding the 2×2 case: \\[\\mathbf{x}^{T}\\mathbf{A}\\mathbf{x} = a_{11}x_1^2 + (a_{12} + a_{21})x_1x_2 + a_{22}x_2^2\\]"
   },
   {
+    "objectID": "slides/02-slides.html#matrix-derivatives-quadratic-forms-2",
+    "href": "slides/02-slides.html#matrix-derivatives-quadratic-forms-2",
+    "title": "Matrix Algebra Fundamentals",
+    "section": "Matrix Derivatives: Quadratic Forms",
+    "text": "Matrix Derivatives: Quadratic Forms\nTaking first derivatives with respect to each variable:\n\\[\\frac{\\partial (\\mathbf{x}^T\\mathbf{A}\\mathbf{x})}{\\partial x_1} = 2a_{11}x_1 + (a_{12} + a_{21})x_2\\]\n\\[\\frac{\\partial (\\mathbf{x}^T\\mathbf{A}\\mathbf{x})}{\\partial x_2} = (a_{12} + a_{21})x_1 + 2a_{22}x_2\\]"
+  },
+  {
+    "objectID": "slides/02-slides.html#matrix-derivatives-quadratic-forms-3",
+    "href": "slides/02-slides.html#matrix-derivatives-quadratic-forms-3",
+    "title": "Matrix Algebra Fundamentals",
+    "section": "Matrix Derivatives: Quadratic Forms",
+    "text": "Matrix Derivatives: Quadratic Forms\nWriting this as a matrix equation:\n\\[\\frac{\\partial (\\mathbf{x}^T\\mathbf{A}\\mathbf{x})}{\\partial \\mathbf{x}} = \\begin{bmatrix}\n2a_{11} & a_{12} + a_{21} \\\\\na_{12} + a_{21} & 2a_{22}\n\\end{bmatrix} \\begin{bmatrix} x_1 \\\\ x_2 \\end{bmatrix}\\]\nTherefore: \\(\\frac{\\partial (\\mathbf{x}^T\\mathbf{A}\\mathbf{x})}{\\partial \\mathbf{x}} = (\\mathbf{A} + \\mathbf{A}^T)\\mathbf{x}\\)"
+  },
+  {
     "objectID": "slides/02-slides.html#derivative-rule-3-quadratic-forms",
     "href": "slides/02-slides.html#derivative-rule-3-quadratic-forms",
     "title": "Matrix Algebra Fundamentals",
