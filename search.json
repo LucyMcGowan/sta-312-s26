@@ -1801,7 +1801,7 @@
     "href": "slides/05-slides.html#substitute-error-variance",
     "title": "Random Vectors and the Gauss-Markov Theorem",
     "section": "Substitute Error Variance",
-    "text": "Substitute Error Variance\n\nFrom Assumption 3: \\(\\text{Var}(\\boldsymbol{\\varepsilon}) = \\sigma^2\\mathbf{I}\\)\n\n\nTherefore: \\[= (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T \\cdot \\sigma^2\\mathbf{I} \\cdot \\mathbf{X}(\\mathbf{X}^T\\mathbf{X})^{-1}\\]"
+    "text": "Substitute Error Variance\n\nFrom Assumption 3: \\(\\text{Var}(\\boldsymbol{\\varepsilon}) = \\sigma^2\\mathbf{I}\\)\n\n\nTherefore: \\[= (\\mathbf{X}^T\\mathbf{X})^{-1}\\mathbf{X}^T \\cdot \\sigma^2\\mathbf{I} \\cdot \\mathbf{X}(\\mathbf{X}^T\\mathbf{X})^{-1}\\]\n\n\nNote: \\(\\mathbf{X}^T\\mathbf{X}\\) is symmetric (\\((\\mathbf{X}^T\\mathbf{X})^T=\\mathbf{X}^T\\mathbf{X}\\)), and the inverse of a symmetric matrix is also symmetric"
   },
   {
     "objectID": "slides/05-slides.html#simplify",
