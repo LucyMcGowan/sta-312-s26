@@ -4584,11 +4584,11 @@
     "text": "TSS Intuition\n\nThink of TSS as: “How spread out are my y-values?”\n\n\nKey insight: This is what we’re trying to explain with our model\n\n\nAlternative matrix form: \\[\\text{TSS} = \\mathbf{y}^T\\mathbf{y} - n\\bar{y}^2\\]"
   },
   {
-    "objectID": "slides/06-slides.html#you-try-calculate-tss",
-    "href": "slides/06-slides.html#you-try-calculate-tss",
+    "objectID": "slides/06-slides.html#tss",
+    "href": "slides/06-slides.html#tss",
     "title": "Sums of Squares and Hypothesis Testing",
-    "section": "You Try: Calculate TSS",
-    "text": "You Try: Calculate TSS\n\nGiven: \\(\\mathbf{y} = \\begin{bmatrix} 2 \\\\ 4 \\\\ 6 \\\\ 8 \\end{bmatrix}\\)\n\n\nFind: TSS using both the definition and matrix form\n\n\n\n\n−+\n03:00"
+    "section": "TSS",
+    "text": "TSS\n\\[\n\\mathbf{y}^T\\mathbf{y}-\\mathbf{y}^T\\bar{y}\\mathbf{1}-\\bar{y}\\mathbf{1}^T\\mathbf{y}+\\bar{y}^T\\bar{y}\n\\]\n\\[\n\\mathbf{y}^T\\bar{y}\\mathbf{1}=\\sum y_i\\bar{y}=\\bar{y}\\sum y_i=\\bar{y}n\\bar{y}=n\\bar{y}^2\n\\] $$ T-2n{y}2+{y}^2\\\n$$ ## You Try: Calculate TSS\n\nGiven: \\(\\mathbf{y} = \\begin{bmatrix} 2 \\\\ 4 \\\\ 6 \\\\ 8 \\end{bmatrix}\\)\n\n\nFind: TSS using both the definition and matrix form\n\n\n\n\n−+\n03:00"
   },
   {
     "objectID": "slides/06-slides.html#you-try-setup",
