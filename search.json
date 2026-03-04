@@ -4546,21 +4546,21 @@
     "href": "slides/04-slides.html#step-by-step-backsolve",
     "title": "Deriving the Hat Matrix and QR Decomposition",
     "section": "Step-by-Step Backsolve",
-    "text": "Step-by-Step Backsolve\n\n\\[\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 4 & 2 \\\\ 0 & 0 & 5 \\end{bmatrix} \\begin{bmatrix} \\hat\\beta_1 \\\\ \\hat\\beta_2 \\\\ \\hat\\beta_3 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 12 \\\\ 15 \\end{bmatrix}\\]\n\n\nStep 1: Solve bottom row first \\[5\\hat\\beta_3 = 15 \\implies \\hat\\beta_3 = 3\\]"
+    "text": "Step-by-Step Backsolve\n\n\\[\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 4 & 2 \\\\ 0 & 0 & 5 \\end{bmatrix} \\begin{bmatrix} \\hat\\beta_0 \\\\ \\hat\\beta_1 \\\\ \\hat\\beta_2 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 12 \\\\ 15 \\end{bmatrix}\\]\n\n\nStep 1: Solve bottom row first \\[5\\hat\\beta_2 = 15 \\implies \\hat\\beta_2 = 3\\]"
   },
   {
     "objectID": "slides/04-slides.html#step-by-step-backsolve-1",
     "href": "slides/04-slides.html#step-by-step-backsolve-1",
     "title": "Deriving the Hat Matrix and QR Decomposition",
     "section": "Step-by-Step Backsolve",
-    "text": "Step-by-Step Backsolve\n\n\\[\n\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 4 & 2 \\\\ 0 & 0 & 5 \\end{bmatrix} \\begin{bmatrix} \\hat\\beta_1 \\\\ \\hat\\beta_2 \\\\ \\hat\\beta_3 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 12 \\\\ 15 \\end{bmatrix}\n\\]\n\nStep 2: Substitute into second row \\[4\\beta_2 + 2(3) = 12 \\implies 4\\beta_2 = 6 \\implies \\beta_2 = 1.5\\]"
+    "text": "Step-by-Step Backsolve\n\n\\[\n\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 4 & 2 \\\\ 0 & 0 & 5 \\end{bmatrix} \\begin{bmatrix} \\hat\\beta_0 \\\\ \\hat\\beta_1 \\\\ \\hat\\beta_2 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 12 \\\\ 15 \\end{bmatrix}\n\\]\n\nStep 2: Substitute into second row \\[4\\beta_1 + 2(3) = 12 \\implies 4\\beta_1 = 6 \\implies \\beta_1 = 1.5\\]"
   },
   {
     "objectID": "slides/04-slides.html#step-by-step-backsolve-2",
     "href": "slides/04-slides.html#step-by-step-backsolve-2",
     "title": "Deriving the Hat Matrix and QR Decomposition",
     "section": "Step-by-Step Backsolve",
-    "text": "Step-by-Step Backsolve\n\n\\[\n\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 4 & 2 \\\\ 0 & 0 & 5 \\end{bmatrix} \\begin{bmatrix} \\hat\\beta_1 \\\\ \\hat\\beta_2 \\\\ \\hat\\beta_3 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 12 \\\\ 15 \\end{bmatrix}\n\\]\n\nStep 3: Substitute into first row \\[2\\beta_1 + 1(1.5) + 3(3) = 8 \\implies 2\\beta_1 = -2.5 \\implies \\beta_1 = -1.25\\]"
+    "text": "Step-by-Step Backsolve\n\n\\[\n\\begin{bmatrix} 2 & 1 & 3 \\\\ 0 & 4 & 2 \\\\ 0 & 0 & 5 \\end{bmatrix} \\begin{bmatrix} \\hat\\beta_0 \\\\ \\hat\\beta_1 \\\\ \\hat\\beta_2 \\end{bmatrix} = \\begin{bmatrix} 8 \\\\ 12 \\\\ 15 \\end{bmatrix}\n\\]\n\nStep 3: Substitute into first row \\[2\\beta_0 + 1(1.5) + 3(3) = 8 \\implies 2\\beta_0 = -2.5 \\implies \\beta_0 = -1.25\\]"
   },
   {
     "objectID": "slides/04-slides.html#backsolve-solution",
