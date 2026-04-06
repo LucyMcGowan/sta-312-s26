@@ -524,11 +524,14 @@ window.Quarto = {
    
   <ul>
   <li><a href="#overview" id="toc-overview" class="nav-link active" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#deliverables" id="toc-deliverables" class="nav-link" data-scroll-target="#deliverables">Deliverables</a></li>
   <li><a href="#wakerspace-safety-training" id="toc-wakerspace-safety-training" class="nav-link" data-scroll-target="#wakerspace-safety-training">WakerSpace Safety Training</a></li>
-  <li><a href="#generate-random-data" id="toc-generate-random-data" class="nav-link" data-scroll-target="#generate-random-data">Generate Random Data</a></li>
-  <li><a href="#generate-y-from-x-using-a-linear-model" id="toc-generate-y-from-x-using-a-linear-model" class="nav-link" data-scroll-target="#generate-y-from-x-using-a-linear-model">Generate Y from X Using a Linear Model</a></li>
+  <li><a href="#plot-random-data" id="toc-plot-random-data" class="nav-link" data-scroll-target="#plot-random-data">Plot Random Data</a></li>
+  <li><a href="#add-springs" id="toc-add-springs" class="nav-link" data-scroll-target="#add-springs">Add Springs</a></li>
+  <li><a href="#calculate-the-true-regression-line-to-compare" id="toc-calculate-the-true-regression-line-to-compare" class="nav-link" data-scroll-target="#calculate-the-true-regression-line-to-compare">Calculate the “true” regression line to compare</a></li>
   <li><a href="#plot-with-ggplot2" id="toc-plot-with-ggplot2" class="nav-link" data-scroll-target="#plot-with-ggplot2">Plot with ggplot2</a></li>
-  <li><a href="#pegboard-construction-at-the-wakerspace" id="toc-pegboard-construction-at-the-wakerspace" class="nav-link" data-scroll-target="#pegboard-construction-at-the-wakerspace">Pegboard Construction at the WakerSpace</a></li>
+  <li><a href="#write-up" id="toc-write-up" class="nav-link" data-scroll-target="#write-up">Write up</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   </ul>
 <div class="toc-actions"><ul><li><a href="https://github.com/sta-312-f25/website/edit/main/ex/ex-wakerspace.qmd" class="toc-action"><i class="bi bi-github"></i>Edit this page</a></li><li><a href="https://github.com/sta-312-f25/website/issues/new" class="toc-action"><i class="bi empty"></i>Report an issue</a></li></ul></div></nav>
     </div>
@@ -557,54 +560,81 @@ window.Quarto = {
 
 <section id="overview" class="level2">
 <h2 class="anchored" data-anchor-id="overview">Overview</h2>
-<p>In this assignment, you will simulate a simple linear regression dataset, fit a model in R, visualize it with <code>ggplot2</code>, and then physically build the regression plot using pegs and springs on a pegboard at the WakerSpace.</p>
+<p>In this assignment, you will physically build a regression plot using dowels, springs, and Styrofoam at the Wakerspace. Then you will “extract the data” (i.e., make a grid and record your x and y coordinates), fit a model in R, and visualize it with <code>ggplot2</code>.</p>
+</section>
+<section id="deliverables" class="level2">
+<h2 class="anchored" data-anchor-id="deliverables">Deliverables</h2>
+<p><strong>Each group (or individual if you decided to work individually) will turn in three things:</strong></p>
+<ol type="1">
+<li>The physical Model</li>
+<li>gglot output</li>
+<li>one paragraph about what you learned</li>
+</ol>
 </section>
 <section id="wakerspace-safety-training" class="level2">
 <h2 class="anchored" data-anchor-id="wakerspace-safety-training">WakerSpace Safety Training</h2>
 <p><strong>Due: Before April 3rd</strong></p>
 <p>Before you can use the WakerSpace equipment, you must complete the required safety training. Visit the <strong>WakerSpace</strong> and complete the in-person safety training session.</p>
-<blockquote class="blockquote">
-<p>⚠️ <strong>You will not be permitted to pick up materials without completing safety training first.</strong></p>
-</blockquote>
+<div class="callout callout-style-default callout-warning callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Warning
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You will not be permitted to pick up materials without completing safety training first.</p>
+</div>
+</div>
 </section>
-<section id="generate-random-data" class="level2">
-<h2 class="anchored" data-anchor-id="generate-random-data">Generate Random Data</h2>
-<p>Using R, generate 10 random X values between 1 and 20. Set a seed for reproducibility.</p>
+<section id="plot-random-data" class="level2">
+<h2 class="anchored" data-anchor-id="plot-random-data">Plot Random Data</h2>
+<p>After you have your Styrofoam “plot” at least 6 (and up to 10) data points by pushing the dowels into the Styrofoam. There may be some trial and error here, you want them to be sufficiently far apart (and with some trend!) to be interesting, but not so far apart that it isn’t possible to reach any of the available springs from the “regression” line.</p>
 </section>
-<section id="generate-y-from-x-using-a-linear-model" class="level2">
-<h2 class="anchored" data-anchor-id="generate-y-from-x-using-a-linear-model">Generate Y from X Using a Linear Model</h2>
-<p>Generate Y values from X using a simple linear model of the form:</p>
-<p><span class="math display">\[Y = \beta_0 + \beta_1 X + \varepsilon\]</span></p>
-<p>where <span class="math inline">\(\varepsilon \sim \mathcal{N}(0, \sigma^2)\)</span>.</p>
-<p>Choose parameters so that Y also ranges approximately from 1 to 20. Then fit a linear regression model to the generated data.</p>
+<section id="add-springs" class="level2">
+<h2 class="anchored" data-anchor-id="add-springs">Add Springs</h2>
+<p>I have sourced <em>several</em> different types of springs (it turns out this was harder than I expected!!) for this project. You will need one spring per data point and are welcome to try any of the ones available at the Wakerspace. There will definitely be some trial and error here – I have purchased some needle nose pliers that may help you attach your springs to the dowels, stretch the springs if they aren’t “springy” enough, etc.</p>
+<p>The Springs then need to connect to the “regression line” dowel.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Remember!! This is supposed to be a fun project to get us off the white board / computer and working with our hands on the concepts we’ve covered in class, if you find yourself getting frustrated, take a step back for a minute!</p>
+</div>
+</div>
+</section>
+<section id="calculate-the-true-regression-line-to-compare" class="level2">
+<h2 class="anchored" data-anchor-id="calculate-the-true-regression-line-to-compare">Calculate the “true” regression line to compare</h2>
+<p>Pull your x y coordinates from your model (i.e., overlay a grid and extract where the dowels fall on the x-axis and y-axis). Calculate <span class="math inline">\(\hat\beta\)</span> using these x and y values. How does the least squares solution to <span class="math inline">\(\hat\beta_0\)</span> and <span class="math inline">\(\hat\beta_1\)</span> compare to what you see in your model?</p>
 </section>
 <section id="plot-with-ggplot2" class="level2">
 <h2 class="anchored" data-anchor-id="plot-with-ggplot2">Plot with ggplot2</h2>
-<p>Create a scatter plot of the data with the fitted regression line. Use <code>coord_fixed()</code> to ensure the plot is exactly square, and set both axes to range from 1 to 20.</p>
-<blockquote class="blockquote">
-<p><strong>Note:</strong> <code>coord_fixed(ratio = 1)</code> ensures one unit on the x-axis equals one unit on the y-axis, making the plot exactly square.</p>
-</blockquote>
+<p>Create a scatter plot of the data with the fitted regression line. Compare this image to your model.</p>
 </section>
-<section id="pegboard-construction-at-the-wakerspace" class="level2">
-<h2 class="anchored" data-anchor-id="pegboard-construction-at-the-wakerspace">Pegboard Construction at the WakerSpace</h2>
-<p><strong>Week of April 6–10</strong></p>
-<p>You will physically recreate your regression plot using <strong>pegs and springs on a pegboard</strong>.</p>
-<ul>
-<li><p>Visit the <strong>WakerSpace during the week of April 6–10</strong> to pick up your materials:</p>
-<ul>
-<li>Pegboard panel<br>
+<section id="write-up" class="level2">
+<h2 class="anchored" data-anchor-id="write-up">Write up</h2>
+<p>Write up a short paragraph of what you learned from this experience. You will turn this in along with your model on Monday, April 13.</p>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<p>A few things to remember about this:</p>
+<ol type="1">
+<li>Again, <strong>each group (or individual if you decided to work individually) will turn in three things (1) the physical Model, (2) the gglot output, (3) one paragraph about what you learned</strong><br>
 </li>
-<li>Pegs (one per data point)<br>
+<li>You can work with other groups to troubleshoot best ways to make this work, if you would like to<br>
 </li>
-<li>Springs (to represent the regression line / residuals)</li>
-</ul></li>
-<li><p>Place pegs at the <span class="math inline">\((X, Y)\)</span> coordinates corresponding to your 10 data points.<br>
-</p></li>
-<li><p>Use springs to represent the fitted regression line between data points and/or to show residuals between each point and the line.<br>
-</p></li>
-<li><p>Label your axes clearly</p></li>
-</ul>
-<p><strong>Bring your printed or digital ggplot as a reference to the WakerSpace.</strong></p>
+<li>Again, this is meant to be fun!! Please decorate your models and have fun trying to create a “physical” representation of ordinary least squares<br>
+</li>
+<li>If you would like to try to incorporate other tools or materials please feel free!! I welcome your creativity!</li>
+</ol>
 
 
 </section>

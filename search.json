@@ -3615,49 +3615,70 @@
     "href": "ex/ex-wakerspace.html",
     "title": "Linear Regression Pegboard Visualization",
     "section": "",
-    "text": "In this assignment, you will simulate a simple linear regression dataset, fit a model in R, visualize it with ggplot2, and then physically build the regression plot using pegs and springs on a pegboard at the WakerSpace."
+    "text": "In this assignment, you will physically build a regression plot using dowels, springs, and Styrofoam at the Wakerspace. Then you will “extract the data” (i.e., make a grid and record your x and y coordinates), fit a model in R, and visualize it with ggplot2."
   },
   {
     "objectID": "ex/ex-wakerspace.html#overview",
     "href": "ex/ex-wakerspace.html#overview",
     "title": "Linear Regression Pegboard Visualization",
     "section": "",
-    "text": "In this assignment, you will simulate a simple linear regression dataset, fit a model in R, visualize it with ggplot2, and then physically build the regression plot using pegs and springs on a pegboard at the WakerSpace."
+    "text": "In this assignment, you will physically build a regression plot using dowels, springs, and Styrofoam at the Wakerspace. Then you will “extract the data” (i.e., make a grid and record your x and y coordinates), fit a model in R, and visualize it with ggplot2."
+  },
+  {
+    "objectID": "ex/ex-wakerspace.html#deliverables",
+    "href": "ex/ex-wakerspace.html#deliverables",
+    "title": "Linear Regression Pegboard Visualization",
+    "section": "Deliverables",
+    "text": "Deliverables\nEach group (or individual if you decided to work individually) will turn in three things:\n\nThe physical Model\ngglot output\none paragraph about what you learned"
   },
   {
     "objectID": "ex/ex-wakerspace.html#wakerspace-safety-training",
     "href": "ex/ex-wakerspace.html#wakerspace-safety-training",
     "title": "Linear Regression Pegboard Visualization",
     "section": "WakerSpace Safety Training",
-    "text": "WakerSpace Safety Training\nDue: Before April 3rd\nBefore you can use the WakerSpace equipment, you must complete the required safety training. Visit the WakerSpace and complete the in-person safety training session.\n\n⚠️ You will not be permitted to pick up materials without completing safety training first."
+    "text": "WakerSpace Safety Training\nDue: Before April 3rd\nBefore you can use the WakerSpace equipment, you must complete the required safety training. Visit the WakerSpace and complete the in-person safety training session.\n\n\n\n\n\n\nWarning\n\n\n\nYou will not be permitted to pick up materials without completing safety training first."
   },
   {
-    "objectID": "ex/ex-wakerspace.html#generate-random-data",
-    "href": "ex/ex-wakerspace.html#generate-random-data",
+    "objectID": "ex/ex-wakerspace.html#plot-random-data",
+    "href": "ex/ex-wakerspace.html#plot-random-data",
     "title": "Linear Regression Pegboard Visualization",
-    "section": "Generate Random Data",
-    "text": "Generate Random Data\nUsing R, generate 10 random X values between 1 and 20. Set a seed for reproducibility."
+    "section": "Plot Random Data",
+    "text": "Plot Random Data\nAfter you have your Styrofoam “plot” at least 6 (and up to 10) data points by pushing the dowels into the Styrofoam. There may be some trial and error here, you want them to be sufficiently far apart (and with some trend!) to be interesting, but not so far apart that it isn’t possible to reach any of the available springs from the “regression” line."
   },
   {
-    "objectID": "ex/ex-wakerspace.html#generate-y-from-x-using-a-linear-model",
-    "href": "ex/ex-wakerspace.html#generate-y-from-x-using-a-linear-model",
+    "objectID": "ex/ex-wakerspace.html#add-springs",
+    "href": "ex/ex-wakerspace.html#add-springs",
     "title": "Linear Regression Pegboard Visualization",
-    "section": "Generate Y from X Using a Linear Model",
-    "text": "Generate Y from X Using a Linear Model\nGenerate Y values from X using a simple linear model of the form:\n\\[Y = \\beta_0 + \\beta_1 X + \\varepsilon\\]\nwhere \\(\\varepsilon \\sim \\mathcal{N}(0, \\sigma^2)\\).\nChoose parameters so that Y also ranges approximately from 1 to 20. Then fit a linear regression model to the generated data."
+    "section": "Add Springs",
+    "text": "Add Springs\nI have sourced several different types of springs (it turns out this was harder than I expected!!) for this project. You will need one spring per data point and are welcome to try any of the ones available at the Wakerspace. There will definitely be some trial and error here – I have purchased some needle nose pliers that may help you attach your springs to the dowels, stretch the springs if they aren’t “springy” enough, etc.\nThe Springs then need to connect to the “regression line” dowel.\n\n\n\n\n\n\nNote\n\n\n\nRemember!! This is supposed to be a fun project to get us off the white board / computer and working with our hands on the concepts we’ve covered in class, if you find yourself getting frustrated, take a step back for a minute!"
+  },
+  {
+    "objectID": "ex/ex-wakerspace.html#calculate-the-true-regression-line-to-compare",
+    "href": "ex/ex-wakerspace.html#calculate-the-true-regression-line-to-compare",
+    "title": "Linear Regression Pegboard Visualization",
+    "section": "Calculate the “true” regression line to compare",
+    "text": "Calculate the “true” regression line to compare\nPull your x y coordinates from your model (i.e., overlay a grid and extract where the dowels fall on the x-axis and y-axis). Calculate \\(\\hat\\beta\\) using these x and y values. How does the least squares solution to \\(\\hat\\beta_0\\) and \\(\\hat\\beta_1\\) compare to what you see in your model?"
   },
   {
     "objectID": "ex/ex-wakerspace.html#plot-with-ggplot2",
     "href": "ex/ex-wakerspace.html#plot-with-ggplot2",
     "title": "Linear Regression Pegboard Visualization",
     "section": "Plot with ggplot2",
-    "text": "Plot with ggplot2\nCreate a scatter plot of the data with the fitted regression line. Use coord_fixed() to ensure the plot is exactly square, and set both axes to range from 1 to 20.\n\nNote: coord_fixed(ratio = 1) ensures one unit on the x-axis equals one unit on the y-axis, making the plot exactly square."
+    "text": "Plot with ggplot2\nCreate a scatter plot of the data with the fitted regression line. Compare this image to your model."
   },
   {
-    "objectID": "ex/ex-wakerspace.html#pegboard-construction-at-the-wakerspace",
-    "href": "ex/ex-wakerspace.html#pegboard-construction-at-the-wakerspace",
+    "objectID": "ex/ex-wakerspace.html#write-up",
+    "href": "ex/ex-wakerspace.html#write-up",
     "title": "Linear Regression Pegboard Visualization",
-    "section": "Pegboard Construction at the WakerSpace",
-    "text": "Pegboard Construction at the WakerSpace\nWeek of April 6–10\nYou will physically recreate your regression plot using pegs and springs on a pegboard.\n\nVisit the WakerSpace during the week of April 6–10 to pick up your materials:\n\nPegboard panel\n\nPegs (one per data point)\n\nSprings (to represent the regression line / residuals)\n\nPlace pegs at the \\((X, Y)\\) coordinates corresponding to your 10 data points.\n\nUse springs to represent the fitted regression line between data points and/or to show residuals between each point and the line.\n\nLabel your axes clearly\n\nBring your printed or digital ggplot as a reference to the WakerSpace."
+    "section": "Write up",
+    "text": "Write up\nWrite up a short paragraph of what you learned from this experience. You will turn this in along with your model on Monday, April 13."
+  },
+  {
+    "objectID": "ex/ex-wakerspace.html#notes",
+    "href": "ex/ex-wakerspace.html#notes",
+    "title": "Linear Regression Pegboard Visualization",
+    "section": "Notes",
+    "text": "Notes\nA few things to remember about this:\n\nAgain, each group (or individual if you decided to work individually) will turn in three things (1) the physical Model, (2) the gglot output, (3) one paragraph about what you learned\n\nYou can work with other groups to troubleshoot best ways to make this work, if you would like to\n\nAgain, this is meant to be fun!! Please decorate your models and have fun trying to create a “physical” representation of ordinary least squares\n\nIf you would like to try to incorporate other tools or materials please feel free!! I welcome your creativity!"
   },
   {
     "objectID": "help-project.html",
