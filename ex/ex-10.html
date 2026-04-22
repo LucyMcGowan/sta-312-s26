@@ -607,7 +607,7 @@ window.Quarto = {
 <section id="problem-1" class="level2">
 <h2 class="anchored" data-anchor-id="problem-1">Problem 1</h2>
 <p>Consider the following small dataset:</p>
-<p><span class="math display">\[\mathbf{y} = \begin{bmatrix}2\\5\\8\\11\\14\end{bmatrix}, \quad \mathbf{X}_1 = \begin{bmatrix}1\\2\\3\\4\\5\end{bmatrix}, \quad \mathbf{X}_2 = \begin{bmatrix}1\\1\\2\\2\\3\end{bmatrix}\]</span></p>
+<p><span class="math display">\[\mathbf{y} = \begin{bmatrix}2\\5\\8\\11\\14\end{bmatrix}, \quad \mathbf{X}_1 = \begin{bmatrix}1\\4\\3\\4\\5\end{bmatrix}, \quad \mathbf{X}_2 = \begin{bmatrix}1\\1\\2\\2\\3\end{bmatrix}\]</span></p>
 <p><strong>a)</strong> Fit the full regression model <span class="math inline">\(y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \varepsilon\)</span> and report <span class="math inline">\(\hat{\beta}_1\)</span>.</p>
 <p><strong>b)</strong> Now apply the FWL procedure: - Regress <span class="math inline">\(y\)</span> on <span class="math inline">\(x_2\)</span> (including an intercept) and save the residuals <span class="math inline">\(\tilde{y}\)</span> - Regress <span class="math inline">\(x_1\)</span> on <span class="math inline">\(x_2\)</span> (including an intercept) and save the residuals <span class="math inline">\(\tilde{x}_1\)</span> - Regress <span class="math inline">\(\tilde{y}\)</span> on <span class="math inline">\(\tilde{x}_1\)</span> (without an intercept)</p>
 <p>Report the coefficient from this final regression. Does it match <span class="math inline">\(\hat{\beta}_1\)</span> from part (a)?</p>
